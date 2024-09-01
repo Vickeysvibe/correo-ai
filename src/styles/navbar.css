@@ -1,0 +1,102 @@
+.navbar {
+  height: 100vh;
+  width: 20vw;
+  color: black;
+  background-color: #f4f6fa;
+  transition: 0.5s ease-in-out;
+  min-width: 200px;
+  z-index: 555;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  margin: 20px;
+  width: 80%;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .ul {
+  height: 50vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-width: 160px;
+  margin-bottom: 240px;
+}
+.navbar ul li {
+  padding-right: 70px;
+  margin: 10px;
+  font-size: 20px;
+  width: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar ul li p {
+  width: 100px;
+  opacity: 0.7;
+  margin-left: 20px;
+  color: black;
+}
+.navbar ul li img {
+  height: 30px;
+  width: auto;
+  filter: invert(1);
+  opacity: 0.5;
+  margin-left: 7%;
+}
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user .dets {
+  width: 70%;
+}
+.over {
+  height: 100vh;
+  width: 3%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 5555;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.user img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    .logo {
+      font-size: 20px;
+    }
+    ul {
+      li {
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .over {
+    display: flex;
+  }
+}
